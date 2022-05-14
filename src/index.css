@@ -36,6 +36,7 @@ form{
 .form-control input[type="text"]{
  font-size: 15px;
  background: beige;
+ margin-right: 10px;
 }
 input[type="submit" i] {
   align-self: center;
@@ -75,7 +76,7 @@ input[type="submit" i] {
   margin-right: 15px;
  }
  .player-turn .player-score {
-   width:120px;
+   width:130px;
    margin-top:15px;
    padding: 10px 15px;
   border:1px solid grey;
@@ -85,5 +86,11 @@ input[type="submit" i] {
   display: block;
  }
 
+ .show-form{
+   display: block;
+ }
+ .hide-form{
+  display: none;
+}
 
 

@@ -5,7 +5,7 @@ import Players from './Players'
 const GamePage = ({playerName}) => {
   return (
     <div className='player-turn'>
-    {playerName.map((player)=> <Players player={player}/>)}
+    {playerName.map((player)=> <Players playerName={player} />)}
     </div>
   )
 }
