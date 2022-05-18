@@ -2,10 +2,10 @@ import React from 'react'
 import Players from './Players'
 
 
-const GamePage = ({playerName}) => {
+const GamePage = ({playerList,updateActivity}) => {
   return (
     <div className='player-turn'>
-    {playerName.map((player)=> <Players playerName={player} />)}
+    {playerList.map((player)=> <Players playerValue={player} key ={player.id} updateActivity={updateActivity}/>)}
     </div>
   )
 }

@@ -93,4 +93,15 @@ input[type="submit" i] {
   display: none;
 }
 
+.form-disable{
+
+}
+.form-disable.btn{
+  pointer-events: none;
+  align-self: center;
+  width: 50%;
+  background: grey;
+  color: white;
+}
+
 

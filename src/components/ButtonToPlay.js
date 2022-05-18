@@ -1,17 +1,11 @@
+import React, { useState } from "react";
 
-import React, { useState } from 'react'
-
-const ButtonToPlay = ({title, startPlay}) => {
-
-    const flagSetting=()=>{
-        startPlay(true)        
-    }
-
+const ButtonToPlay = ({ title, flag, getFlagValue }) => {
   return (
-    <div className='play-button-container'>
-       <button onClick={flagSetting}>{title}</button>
+    <div className="play-button-container">
+      <button onClick={() => getFlagValue(!flag)}>{title}</button>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonToPlay
+export default ButtonToPlay;
